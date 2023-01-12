@@ -10,6 +10,7 @@ public class Hotelanlage {
     public Hotelanlage(String name, Adresse adresse) {
         this.name = name;
         this.adresse = adresse;
+        gebaeudeList = new ArrayList<>();
     }
 
     public String getName() {

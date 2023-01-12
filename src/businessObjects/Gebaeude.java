@@ -8,6 +8,7 @@ public class Gebaeude {
 
     public Gebaeude(String name) {
         this.name = name;
+        etagenListe = new ArrayList<>();
     }
 
     public String getName() {

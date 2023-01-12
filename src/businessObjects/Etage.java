@@ -8,6 +8,7 @@ public class Etage {
 
     public Etage(String name) {
         this.name = name;
+        zimmerListe = new ArrayList<>();
     }
 
     public String getName() {
@@ -27,11 +28,22 @@ public class Etage {
     }
 
     public int getAnzahlZimmerFrei() {
-        return
+        int zimmerFrei = 0;
+        for (Zimmer z : zimmerListe) {
+            if (z.getGastListe().isEmpty()) {
+                zimmerFrei++;
+            }
+        }
+        return zimmerFrei;
     }
 
     public int getAnzahlGaeste() {
-        return
+        int anzahlGaeste = 0;
+        for (Zimmer z : getZimmerListe()) {
+            anzahlGaeste += z.getAnzahlGaeste();
+
+        }
+        return anzahlGaeste;
     }
 
     @Override
