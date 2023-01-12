@@ -24,7 +24,7 @@ public class Gebaeude {
     }
 
     public int getAnzahlEtagen() {
-        return
+        return etagenListe.size();
     }
 
     public int getAnzahlZimmer() {
