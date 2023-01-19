@@ -39,7 +39,7 @@ public class Etage {
 
     public int getAnzahlGaeste() {
         int anzahlGaeste = 0;
-        for (Zimmer z : getZimmerListe()) {
+        for (Zimmer z : zimmerListe) {
             anzahlGaeste += z.getAnzahlGaeste();
 
         }
@@ -48,9 +48,9 @@ public class Etage {
 
     @Override
     public String toString() {
-        return "Etage{" +
-                "name='" + name + '\'' +
-                ", zimmerListe=" + zimmerListe +
-                '}';
+        return "\n\t\tEtage: " + getName() +
+                " ,Zimmer: " + getAnzahlZimmer() +
+                " ,Zimmer frei: " + getAnzahlZimmerFrei() +
+                " ,Gäste: " + getAnzahlGaeste();
     }
 }

@@ -9,7 +9,7 @@ public class GastNotCheckInException extends Exception{
     }
 
     public String getMessage() {
-        return "Keinen Gast gefunden";
+        return "Der Gast " + gast.getNachname() + "ist in diesem Zimmer nicht eingecheckt.";
     }
 
 

@@ -8,6 +8,6 @@ public class GastAlreadyCheckedInException extends Exception{
     }
 
     public String getMassage() {
-        return "Gast schon vorhanden!";
+        return "Der Gast " + gast.getNachname() + "ist schon in diesem Zimmer eingecheckt.";
     }
 }
